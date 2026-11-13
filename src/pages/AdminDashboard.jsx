@@ -31,7 +31,7 @@ function AdminDashboard() {
   const fetchFoods = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/foods"
+        "https://foodiehub-online-food-ordering-2026.onrender.com/api/foods"
       );
 
       if (!response.ok) {
@@ -72,7 +72,7 @@ function AdminDashboard() {
       */
 
       const response = await fetch(
-        "http://localhost:5000/api/orders",
+        "https://foodiehub-online-food-ordering-2026.onrender.com/api/orders",
         {
           method: "GET",
           headers: {
@@ -174,8 +174,8 @@ function AdminDashboard() {
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/foods/${editingId}`
-        : "http://localhost:5000/api/foods";
+        ? `https://foodiehub-online-food-ordering-2026.onrender.com/api/foods/${editingId}`
+        : "https://foodiehub-online-food-ordering-2026.onrender.com/api/foods";
 
       const method = editingId
         ? "PUT"
@@ -270,7 +270,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/foods/${id}`,
+        `https://foodiehub-online-food-ordering-2026.onrender.com/api/foods/${id}`,
         {
           method: "DELETE",
         }
@@ -334,7 +334,7 @@ function AdminDashboard() {
     try {
       const response =
         await fetch(
-          `http://localhost:5000/api/orders/${orderId}/status`,
+          `https://foodiehub-online-food-ordering-2026.onrender.com/api/orders/${orderId}/status`,
           {
             method: "PUT",
 

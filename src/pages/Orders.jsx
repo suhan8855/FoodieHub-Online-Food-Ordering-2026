@@ -18,7 +18,7 @@ function Orders() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/orders/my",
+        "https://foodiehub-online-food-ordering-2026.onrender.com/api/orders/my",
         {
           method: "GET",
           headers: {

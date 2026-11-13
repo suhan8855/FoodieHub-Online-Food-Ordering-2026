@@ -11,7 +11,7 @@ function Foods() {
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/foods")
+    fetch("https://foodiehub-online-food-ordering-2026.onrender.com/api/foods")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch foods");
